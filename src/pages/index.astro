@@ -1,0 +1,182 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+  <!-- Section 1: The Hero Header -->
+  <section class="relative h-[90vh] min-h-[600px] flex items-center bg-gray-900">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="/images/hero_bg_1780301518726.png" 
+        alt="Premium Living Room in Mumbai" 
+        class="w-full h-full object-cover opacity-60"
+      />
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+      <div class="max-w-3xl animate-fade-in-up">
+        <span class="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Shabbir Tinwala Interiors</span>
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-tight mb-6">
+          Personalized Residential Interior Design in <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-white">Mumbai</span>
+        </h1>
+        <p class="text-xl text-gray-200 mb-10 font-light max-w-2xl leading-relaxed">
+          Crafting functional, beautiful spaces without the agency markup. Direct communication, transparent pricing, and 1-on-1 site supervision.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="/spaces" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded font-medium text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            View Recent Work
+          </a>
+          <a href="/work-with-me" class="bg-accent/90 backdrop-blur hover:bg-accent text-white px-8 py-4 rounded font-medium text-lg transition-all border border-accent/20 transform hover:-translate-y-1">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: The Freelance Advantage -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 tracking-tight">The Freelance Advantage</h2>
+        <p class="text-lg text-gray-500 font-light">Why working directly with an independent designer yields better results.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-12 text-center">
+        <div class="p-6 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors duration-300">
+          <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm text-accent mb-6">
+            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-primary">Direct Communication</h3>
+          <p class="text-gray-600 font-light leading-relaxed">No middlemen, project managers, or miscommunications. You speak directly with the designer executing your vision.</p>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors duration-300">
+          <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm text-accent mb-6">
+            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-primary">Budget Transparency</h3>
+          <p class="text-gray-600 font-light leading-relaxed">Every rupee goes into your home's materials and craftsmanship, not into funding a large agency's overhead costs.</p>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors duration-300">
+          <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm text-accent mb-6">
+            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-primary">1-on-1 Site Supervision</h3>
+          <p class="text-gray-600 font-light leading-relaxed">Personal oversight of contractors on site ensuring that the final execution matches the 3D designs perfectly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Feature Project Spotlight -->
+  <section class="py-24 bg-secondary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 relative rounded-2xl overflow-hidden shadow-2xl group">
+          <img 
+            src="/images/feature_project_1780301534449.png" 
+            alt="Compact Multi-Functional Living Room" 
+            class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
+          />
+          <div class="absolute inset-0 border-4 border-white/20 rounded-2xl pointer-events-none"></div>
+        </div>
+        
+        <div class="order-1 lg:order-2">
+          <span class="text-accent font-medium tracking-wide uppercase text-sm mb-3 block">Featured Project</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6 tracking-tight">The Multi-Functional 2BHK</h2>
+          <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">
+            Our client needed a living space that could entertain guests by night but serve as a functional home office by day. Space was tight.
+          </p>
+          <p class="text-lg text-gray-600 font-light leading-relaxed mb-8">
+            <strong>The Solution:</strong> We transformed this compact 2BHK living room using hidden, push-to-open storage, a fold-away workspace, and a monochromatic palette to make the room feel twice its actual size.
+          </p>
+          <a href="/spaces" class="inline-flex items-center text-accent hover:text-accent-hover font-semibold transition-colors group">
+            Explore more spaces
+            <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Quick-Cut Video Reel (Simulated) -->
+  <section class="py-24 bg-gray-900 text-white overflow-hidden relative">
+    <div class="absolute inset-0 opacity-10 bg-[url('/images/hero_bg_1780301518726.png')] bg-cover bg-center"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Behind The Scenes</h2>
+      <p class="text-xl text-gray-300 font-light mb-12 max-w-2xl mx-auto">
+        Raw, real, and on-site. Watch a quick walkthrough of a space coming together from bare walls to the final polish.
+      </p>
+      
+      <!-- Video Player -->
+      <div class="max-w-3xl mx-auto aspect-video bg-black rounded-xl border border-gray-700 shadow-2xl relative overflow-hidden">
+        <video 
+          controls 
+          preload="metadata" 
+          poster="/images/before_after_1780301581590.png" 
+          class="w-full h-full object-cover"
+        >
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Client Praise -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 tracking-tight">Client Stories</h2>
+        <p class="text-lg text-gray-500 font-light">What our homeowners have to say about the process.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+          <div class="flex text-accent mb-4">
+            {"★★★★★".split('').map(star => <span>{star}</span>)}
+          </div>
+          <p class="text-gray-700 italic mb-6 leading-relaxed">"Shabbir completely understood our vision. The lack of agency bureaucracy meant our project finished 3 weeks early. The carpentry finish is flawless."</p>
+          <div class="font-medium text-primary">— Anjali M., Andheri West</div>
+        </div>
+        
+        <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 shadow-sm relative transform md:-translate-y-4">
+          <div class="flex text-accent mb-4">
+            {"★★★★★".split('').map(star => <span>{star}</span>)}
+          </div>
+          <p class="text-gray-700 italic mb-6 leading-relaxed">"We were nervous about our budget, but the transparency provided gave us total peace of mind. He optimized our kitchen layout beautifully without breaking the bank."</p>
+          <div class="font-medium text-primary">— Rahul & Sneha, Powai</div>
+        </div>
+        
+        <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+          <div class="flex text-accent mb-4">
+            {"★★★★★".split('').map(star => <span>{star}</span>)}
+          </div>
+          <p class="text-gray-700 italic mb-6 leading-relaxed">"The 1-on-1 attention is what sold me. Shabbir was on site every other day making sure the contractors followed the 3D renders perfectly."</p>
+          <div class="font-medium text-primary">— Vikram S., Bandra</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+</style>

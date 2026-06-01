@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Spaces - Portfolio" description="Explore our interior design portfolio sorted by spaces: Living & Entertainment, Smart Kitchens, and Transformations.">
+  
+  <!-- Page Header -->
+  <section class="bg-primary text-white py-24 md:py-32 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[url('/images/hero_bg_1780301518726.png')] bg-cover bg-center"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Our Spaces</h1>
+      <p class="text-xl text-gray-300 font-light max-w-3xl mx-auto leading-relaxed">
+        Every home is unique. Here is a look at how we maximize comfort, lighting, and storage across different areas of the home.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 2: Living & Entertainment Zones -->
+  <section class="py-20 bg-secondary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 md:flex md:items-end md:justify-between">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl font-bold text-primary mb-4">Living & Entertainment Zones</h2>
+          <p class="text-gray-600 font-light">Custom TV unit designs, modern living room layouts, and comfortable lounging areas tailored for family life and hosting guests.</p>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="group cursor-pointer">
+          <div class="overflow-hidden rounded-xl bg-gray-200 aspect-[4/3] relative">
+            <img src="/images/hero_bg_1780301518726.png" alt="Modern living room layout with city view" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end pointer-events-none">
+              <p class="text-white p-6 font-medium">Premium Seating & View Integration</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-gray-500 font-medium">Custom seating arrangement • Natural light optimization</p>
+        </div>
+        
+        <div class="group cursor-pointer">
+          <div class="overflow-hidden rounded-xl bg-gray-200 aspect-[4/3] relative">
+            <img src="/images/feature_project_1780301534449.png" alt="Custom TV unit design in multi-functional living room" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end pointer-events-none">
+              <p class="text-white p-6 font-medium">Multi-functional Living Space</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-gray-500 font-medium">Custom TV unit design • Hidden storage solutions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Smart Kitchens & Storage -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 md:flex md:items-end md:justify-between">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl font-bold text-primary mb-4">Smart Kitchens & Storage</h2>
+          <p class="text-gray-600 font-light">Modular kitchen overhauls, seamless wardrobe integrations, and intelligent storage solutions that maximize utility without sacrificing aesthetics.</p>
+        </div>
+      </div>
+      
+      <div class="relative rounded-2xl overflow-hidden group">
+        <div class="aspect-[21/9] md:aspect-[2.5/1] bg-gray-200">
+          <img src="/images/kitchen_shot_1780301549107.png" alt="Smart modular kitchen design" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 p-6 md:p-10 w-full md:w-2/3 bg-gradient-to-t from-black/80 to-transparent pointer-events-none">
+          <h3 class="text-2xl font-bold text-white mb-2">The Open-Plan Modular Kitchen</h3>
+          <p class="text-gray-200 font-light hidden md:block">Featuring handleless cabinets, built-in appliances, and a seamless quartz countertop acting as a breakfast bar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: The "Before & After" Showcase -->
+  <section class="py-24 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-accent font-medium tracking-wide uppercase text-sm mb-3 block">Transformation</span>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Before & After</h2>
+        <p class="text-xl text-gray-400 font-light">See the impact of professional design, spatial planning, and quality execution.</p>
+      </div>
+      
+      <div class="rounded-2xl overflow-hidden shadow-2xl border border-gray-800 bg-black max-w-5xl mx-auto relative group">
+        <img src="/images/before_after_1780301581590.png" alt="Before and after interior design transformation" class="w-full h-auto object-cover opacity-90 group-hover:opacity-100 transition-opacity" />
+      </div>
+      
+      <div class="mt-12 text-center">
+        <a href="/work-with-me" class="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white px-8 py-4 rounded font-medium transition-colors">
+          Start Your Transformation
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
